@@ -3,6 +3,8 @@ import java.util.*;
 
 
 public class Main{
+  int[] corpoPersonagem = new int[7];
+  
   public static void main(String[] args) {
     Scanner ler = new Scanner(System.in);
     int start;
@@ -14,6 +16,7 @@ public class Main{
 
     if(start == 1){
       Jogo();
+
     }else{
       System.out.println("Obrigado por jogar\nFelipe Oliveira\nGuilherme Correia");
     }
@@ -60,9 +63,8 @@ public class Main{
     System.out.print("Aperte ENTER para continuar");
     vazio = ler.nextLine();
 
-    // Função Glosser(); lista dos personagens.
-    escolherPersonagem();
-
+    // Função Glosser(); lista dos personagens 
+    
     
   }
   
