@@ -1,7 +1,7 @@
 import java.util.*;
 
 
-public class Main {
+public class mainTest {
     int[] corpoPersonagem = new int[7];
   
     public static void main(String[] args){
