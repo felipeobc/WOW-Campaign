@@ -2,7 +2,7 @@ import java.util.*;
 
 
 public class Main {
-    int[] corpoPersonagem = new int[7];
+    public static int[] corpoPersonagem = new int[2];
   
     public static void main(String[] args){
       Scanner ler = new Scanner(System.in);
@@ -20,7 +20,8 @@ public class Main {
         escolha = escolhapersonagem();
         
         if(escolha == 1){
-          
+          corpoPersonagem[0] = 1;
+          System.out.println(corpoPersonagem[0]);           
         }else{
   
         }
@@ -30,10 +31,7 @@ public class Main {
       }
     }
       
-    private static java.net.URL getResource(String diretorio) {
-      return null;
-    }
-  
+
     static void Inicio() {
       Scanner er = new Scanner(System.in);
       String vazio;
@@ -93,7 +91,8 @@ public class Main {
       escolha = sc.nextInt();
   
       if(escolha == 1){// Escolheu Aliança
-        return 1;
+        escolha = 1;
+        return escolha;
       }else{            //Escolheu Horda
         return 2;
       }
