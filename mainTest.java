@@ -37,7 +37,6 @@ public class mainTest {
       if (escolha == 1) {// Atribui os equipamentos da Aliança, Linha de historia da Aliança
         escolha = 0;
         equipAlinca();
-        historiaAliança01();
         escolha = historiaAliança01();
         if(escolha == 1){//Historia Karazan
 
@@ -49,7 +48,12 @@ public class mainTest {
       }else{// Atribui os equipamentos da Horda, Linha de historia da Horda
         escolha = 0;
         equipHorda();
-        historiaHorda01();
+        escolha = historiaHorda01();
+        if(escolha == 1){//Historia Missão Especial
+
+        }else{ //Hitoria Queda de Vento-Bravo
+
+        }
       }
 
     }
@@ -129,7 +133,7 @@ public class mainTest {
     System.out.println(
         "Aliança: VocÊ vai ser um jovem soldado humano e vai  defender a cidade  das forças poderoça que marcham en direção a Vento Bravo");
     System.out.println(
-        "Horda: Você vai assumir um Orc conrrompido pelo Sangue Vil e ajudara a nova Horda a conquistar com o sangeu e furia o seu novo lar ");
+        "Horda: Você vai assumir um Orc conrrompido pelo Sangue Vil do Clã Lobos de Gelo e ajudara a nova Horda a conquistar com o sangeu e furia o seu novo lar ");
     // mostrar imagem dos modelos
     System.out.println("(1) - Alinça (2) - Horda");
     System.out.print("Faça a sua escolha: ");
@@ -301,12 +305,288 @@ public class mainTest {
     
   }
 
-  static void historiaHorda01() {//Historia introdução Horda Etapa 1
+  static int historiaHorda01() {//Historia introdução Horda Etapa 1
+    Scanner er = new Scanner(System.in);
+    Scanner re = new Scanner(System.in);
+    String vazio;
+    int escolha;
+    
+    System.out.println("Depois de conquistarem terras após terras o a horda desce em direção ao Sul.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Você consegui escapar da traição do Conselho das Sombras após ver seu lider Durotan e sua mulher Greta serem assassinados pelo clã da Lua Negras comandados por Gul’Dan.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Você e seus amigos  Sion, Yorick e a meia Orc Garona fogem em direção ao Sul para se encontrarem com os outros Clã Orcs para informarem o acontecimento.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Voces chegam em uma região de campinas onde tem grandes de campos de plantio mas com rastros de destruição.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Ao leste uma grande fumaça preta cobre o ceú e vocês resolvem verificar oque está acontecendo.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("(Alguns minutos de caminhada)");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Ao meio dia vocês passam ao lado de torres em chamas e logo mais acima da montanha consegue ver a bandeira da Horda tribulando em cima de uma castelo de pedra");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Em seu portão conseguem ver o BlackHand segurando um jovem soldado humano pelo pescoço e a outra sua Garra Longa atravessando a sua barriga.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Ao se aproximarem Ogrin fica feliz que o clã do seu melhor amigo veio se juntar a eles\n Mas logo percebe o pior apenas vendo vocês três\nBlackHand direciona o um olhar de satisfeito e com um sorriso sarcastico.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Você sabe que Ogrim DoonHammer é o melhor amigo de Durotan");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Você quer passar as noticia  para Ogrim ou  BlackHand ?");
+    System.out.println("Qual a sua Resposta ?");
+    System.out.print("(1) - BlackHand (2) - Ogrim");
+    escolha = re.nextInt();
+
+    if(escolha == 1){//Fala com o BlackHand
+      System.out.println("Warchief BlackHand tivemos uma traição entre nos.\nFomos atacado pelo clã Lua Negra a uma noite Durotan e Greta foram mortos!");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+      
+      System.out.println("BlackHand olha com um olhar de satisfeitos e diz!");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("E a Criança ?");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("Acredito que tambem está morta !");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("Os fracos nunca teram vez no novo mundo");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("Você fica assuntado com a resposta\nMas não pode fazer nada por que você é apenas um Soldado");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      escolha = 0;
+    }else{
+
+      escolha =0;
+      System.out.println("Você quer passar as noticia  para Ogrim?");
+      System.out.println("Qual a sua Resposta ?");
+      System.out.print("(1) - Sim (2) - Não");
+      escolha = re.nextInt();
+
+      if(escolha == 1){
+        System.out.println("Ogrin, Orgin DoonHammer fomos traido o Clã Lua Negra nos atacou durante a noite não tivemos chance de nos defender\n Durotan e Greta estão mortos");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println("Isso não é possível\n Durotan, Greta meu amigo!,");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println("E o filho deles ?");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println("Não Sabemos!");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println("Ogrim direciona o olhar com muita raiva para BlacHand");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        
+      }else{
+        System.out.println("Garona olha para com olhar de raiva e diz");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println("Quem é o Traidor ?!");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+      }
+    }
+    System.out.println("Ao anoitecer o você se encontra sentado em um banco em um corredor de pedra dentro da fortaleza recém-conquistada perto de uma das salas que os lideres dos clãs estão discutindo os próximos passos.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+    
+    System.out.println("Ao seu lado o seu amigo Sion");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Você quer fala com Sion?");
+    System.out.println("Qual a sua Resposta ?");
+    System.out.print("(1) - Sim (2) - Não");
+    escolha = re.nextInt();
+
+    if(escolha == 1){
+      System.out.println("você vira para o seu amigo e fala");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("Oque você acha que vai acontecer com o nosso clã logo que o nosso lider esta morto?");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("Antes mesmo  que Sion começaria a falar olha para o lado.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+      escolha = 0;
+
+      
+    }
+    System.out.println("Você vê Ogrim e Garona em passos rapidos em direção a porta onde estão os lideres dos Clãs Orcs");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Ogrim entra na porta com e chama BlackHand para um Mak’Gora um ritual de duelo para revindicar alguma a liderança da horda e vingar a morte do seu amigo.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Ambos vão para o pátio da fortaleza onde Ogrim derrota BlackHand o boneco de Gul’Dan e assumi a liderança da horda.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Ogrim após a vitória se levanta com a feição de cansaço olhando para todos no  pátio  e grita.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+    
+    System.out.println("VAMOS ACABAR COM ESSA GUERRA DE UMA VEZ POR TODA\nOcta’Rogar!!!!!!!!!!!! ");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Na manha seguinte todos os clãs marcham para Oeste em direção a umas das maiores cidade dos humanos conhecida Vento-Bravo.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Em marchar você escuta a voz de Garona "+nomeHeroi);
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Fui designada a uma missão especial");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Você olha para Garona com um olhar reprido");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println(" Eu já fui capturada por eles e sei algumas passagens que cortam a cidade e gostaria que você fosse comigo.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Você quer ir com a Garona ?");
+    System.out.println("Qual a sua Resposta ?");
+    System.out.print("(1) - Sim (2) - Não");
+    escolha = re.nextInt();
+
+    if(escolha == 1){
+      System.out.println("Garona fica feliz com a sua escolha ");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("Eu sabia que você não ia falar não");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      corpoPersonagem[2] = "Adaga-Envenenada";
+      corpoPersonagem[3] = "Adaga-Envenenada";
+
+      return 1;
+
+    }else{
+      System.out.println("Garona fica com o olhar de pesado\n Tudo bem ! ");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("Eu entendo !");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+    }
+
+    System.out.println("VocÊ continua com a marcha e responde a garona");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Vou honrar os ultimos membros do meu clã em batalha.");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    System.out.println("Octa’Rogar");
+    System.out.print("Aperte ENTER para continuar");
+    vazio = er.nextLine();
+    System.out.println();
+
+    return 2;
 
   }
+ 
   static void historiaQuedaDeVentoBravo(){
 
   }
+ 
   static void historiaPrincipaKarazan(){
 
   }
