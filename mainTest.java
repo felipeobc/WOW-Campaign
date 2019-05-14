@@ -3,7 +3,7 @@ import java.util.*;
 public class mainTest {
 
   public static String[] corpoPersonagem = new String[8];
-  public static String nomeHeroi = "doiso";
+  public static String nomeHeroi;
   
   static void equipAlinca(){
     String equipamentoAlianca[] = { "Elmo-Ventobraviano", "Peitoral-Ventobraviano", "Mão Esquerda ", "Mão Direita",
