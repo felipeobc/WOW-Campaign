@@ -28,6 +28,7 @@ public class mainTest {
     System.out.println("(1) - Começar (2) - Sair");
     System.out.print("Escolha uma Opção: ");
     start = ler.nextInt();
+    System.out.println();
 
     if (start == 1) {
 
@@ -129,27 +130,32 @@ public class mainTest {
     String  vazio;
     int escolha;
 
-    System.out.println("Escolha o seu lado da batalha");
-    System.out.println(
-        "Aliança: VocÊ vai ser um jovem soldado humano e vai  defender a cidade  das forças poderoça que marcham en direção a Vento Bravo");
-    System.out.println(
-        "Horda: Você vai assumir um Orc conrrompido pelo Sangue Vil do Clã Lobos de Gelo e ajudara a nova Horda a conquistar com o sangeu e furia o seu novo lar ");
+    System.out.println();
+    System.out.println("ESCOLHA SEU LADO DA BATALHA!!!");
+    System.out.println();
+    System.out.println("ALIANÇA: VocÊ vai ser um jovem soldado humano e vai  defender a cidade  das forças poderoça que marcham en direção a Vento Bravo");
+    System.out.println();
+    System.out.println("HORDA: Você vai assumir um Orc conrrompido pelo Sangue Vil do Clã Lobos de Gelo e ajudara a nova Horda a conquistar com o sangeu e furia o seu novo lar ");
+    System.out.println();
     // mostrar imagem dos modelos
     System.out.println("(1) - Alinça (2) - Horda");
     System.out.print("Faça a sua escolha: ");
     escolha = sc.nextInt();
+    System.out.println();
 
     if (escolha == 1) {// Escolheu Aliança
       System.out.println("VOCÊ ESCOLHEU ALIANÇA");
       System.out.print("Escolha o nome do seu personagem: ");
       nomeHeroi = cs.nextLine();
+      System.out.println();
       System.out.println("Seja bem-vindo ao Jogo " + nomeHeroi);
       System.out.print("Aperte ENTER para continuar");
       vazio = cs.nextLine();
+      System.out.println();
 
       return 1;
-    } else {// Escolheu Horda
-      System.out.println("VOCÊ ESCOLHEU HORDA");
+    } else {// Escolheu Horda11
+      System.out.println("!!!!VOCÊ ESCOLHEU HORDA!!!!");
       System.out.print("Escolha o nome do seu personagem: ");
       nomeHeroi = cs.nextLine();
       System.out.println("Seja bem-vindo ao Jogo " + nomeHeroi);
@@ -196,11 +202,6 @@ public class mainTest {
     vazio = er.nextLine();
     System.out.println();
 
-    System.out.println("Entre eles o Sir Lothar um dos maiores comandante da Aliança e o único da mês que tinha enfrentados as novas ameças e saiu vivo e o Arch Mago Hadigar um iniciante de mago arcano e aluno da faculdade de Dalaran.");
-    System.out.print("Aperte ENTER para continuar");
-    vazio = er.nextLine();
-    System.out.println();
-
     System.out.println("Entre eles o Sir.Lothar um dos maiores comandante da Aliança e o único que tinha enfrentado a nova ameça e saiu vivo para contar a historia e o Arch Mago Haddigar um iniciante de mago arcano e aluno da faculdade de Dalaran.");
     System.out.print("Aperte ENTER para continuar");
     vazio = er.nextLine();
@@ -211,19 +212,21 @@ public class mainTest {
     vazio = er.nextLine();
     System.out.println();
 
-    System.out.println("Vladimir - Com medo Nome do jogador?");
+    System.out.println("Vladimir: Com medo ? " +nomeHeroi);
     System.out.println("Qual a sua Resposta ?");
-    System.out.print("(1) - Sim (2) - não");
+    System.out.println("(1) - Sim (2) - Não");
+    System.out.print("Faça a sua escolha: ");
     escolha = re.nextInt();
+    System.out.println();
     
     if(escolha == 1){
-      System.out.println("Sim. Mas isso me faz pensar melhor pelo que está por vir !");
+      System.out.println(nomeHeroi+": Sim. Mas isso me faz pensar melhor pelo o que está por vir !");
       System.out.print("Aperte ENTER para continuar");
       vazio = er.nextLine();
       System.out.println();
       escolha = 0;
     }else{
-      System.out.println("Vladimr olha para você com o olhar sério e fala\nPois deveria não sabemos como nosso inimigo luta, eles estão conquistando província após província logo logo estaram aqui");
+      System.out.println("Vladimr olha para você com o olhar sério e fala\nVladimir: Pois deveria não sabemos como nosso inimigo luta, eles estão conquistando província após província logo logo estaram aqui");
       System.out.print("Aperte ENTER para continuar");
       vazio = er.nextLine();
       System.out.println();
@@ -237,8 +240,10 @@ public class mainTest {
     
     System.out.println("Você quer escutar Leonidas lendo o relatório ?");
     System.out.println("Qual a sua Resposta ?");
-    System.out.print("(1) - Sim (2) - Não");
+    System.out.println("(1) - Sim (2) - Não");
+    System.out.print("Faça a sua Escolha: ");
     escolha = re.nextInt();
+    System.out.println();
 
     if(escolha == 1){
       System.out.println("Você se levanta e se aproxima da mesa de guerra");
@@ -246,7 +251,7 @@ public class mainTest {
       vazio = er.nextLine();
       System.out.println();
 
-      System.out.println("Leônidas lê para todos proximos a mesa:");
+      System.out.println("Leônidas lê para todos proximos a mesa");
       System.out.print("Aperte ENTER para continuar");
       vazio = er.nextLine();
       System.out.println();
@@ -257,31 +262,33 @@ public class mainTest {
       vazio = er.nextLine();
       System.out.println();
 
-      System.out.println("Haddgar fala!\nAs minhas fontes afirmam que Através de um esforço conjunto, Medivh e os warlocks do conselho das Sombras abriram o portal dimensional.");
+      System.out.println("Haddgar: As minhas fontes afirmam que Através de um esforço conjunto, Medivh e os warlocks do conselho das Sombras abriram o portal dimensional.");
       System.out.print("Aperte ENTER para continuar");
       vazio = er.nextLine();
       System.out.println();
       
-      System.out.println("Rei Llane agumenta\nHadgar Lothar recrute mais alguém para ir a Karazan deter Mediv");
+      System.out.println("Rei Llane: Hadgar, Lothar recrute mais alguém para ir a Karazan deter Mediv essa guerra já está indo longe de mais.");
       System.out.print("Aperte ENTER para continuar");
       vazio = er.nextLine();
       System.out.println();
 
       escolha = 0;
-      System.out.println("Você quer escutar Leonidas lendo o relatório ?");
+      System.out.println("Você quer ser volutario nessa missão ? ");
       System.out.println("Qual a sua Resposta ?");
-      System.out.print("(1) - Sim (2) - Não");
+      System.out.println("(1) - Sim (2) - Não");
+      System.out.print("Faça a sua escolha: ");
       escolha = re.nextInt();
+      System.out.println();
 
       if(escolha == 1){
-        System.out.println("Senhor! Vladimir direcinona a fala a Lothar");
+        System.out.println("Vladimir: Senhor! Vladimir direcinona a fala a Lothar");
         System.out.println("Posso indicar um dos meus melhores homems habilidoso com espada e arco o "+nomeHeroi+"  ele poderar ser de grande ajuda.");
         System.out.print("Aperte ENTER para continuar");
         vazio = er.nextLine();
         System.out.println();
 
         System.out.println("Lothar direciona as palavras a você");
-        System.out.println(nomeHeroi+" Se prepare não vai ser nada facil!");
+        System.out.println("Lothar: "+nomeHeroi+" se prepare não vai serar nada facil!");
         System.out.print("Aperte ENTER para continuar");
         vazio = er.nextLine();
         System.out.println();
@@ -295,7 +302,7 @@ public class mainTest {
 
     }
 
-    System.out.println("Todos na sala escutam as trombetas na cidade!\n Rei Llane da a Ordem\nTODOS NA SUA POSIÇÃO !\nPELA ALIANÇA!!!");
+    System.out.println("Todos na sala escutam as trombetas na cidade!\n Rei Llane da a Ordem\nRei Llane: TODOS NA SUA POSIÇÃO !\nTodos: PELA ALIANÇA!!!");
     System.out.print("Aperte ENTER para continuar");
     vazio = er.nextLine();
     System.out.println();
