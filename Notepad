@@ -40,3 +40,44 @@ O rei Llane subestimara severamente o poder da Horda e observava impotente o rei
 Lothar e seus guerreiros, voltando para casa de Karazhan, esperavam conter a perda de vidas e salvar sua pátria outrora gloriosa. Em vez disso, eles voltaram tarde demais e encontraram seu amado reino em ruínas fumegantes. A horda orc continuou a devastar o campo e reivindicou as terras vizinhas para si. Forçado a se esconder, Lothar e seus companheiros fizeram um juramento implacável para recuperar sua terra natal a qualquer custo fungindo para as terra de Lortheron o maior reino dos humanos.
 
 
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package testeimagem;
+
+import java.awt.Desktop;
+import java.io.File;
+import java.net.URL;
+
+/**
+ *
+ * @author felipe.obcamargo
+ */
+public class TesteImagem {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        try {
+        URL url = TesteImagem.class.getResource("imagem/Banana.jfif");        
+        Desktop desktop = Desktop.getDesktop();
+        
+        File file = new File(url.getFile());
+        
+        desktop.open(file);
+        }
+        catch(Exception e) {
+            System.out.println("Erro");
+            e.printStackTrace();
+        }
+        
+    }
+
+    
+    
+}
+
