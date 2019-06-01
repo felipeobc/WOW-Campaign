@@ -15,7 +15,7 @@ public class mainTeste2 {
     Scanner ler = new Scanner(System.in);
     int start, escolha;
 
-    System.out.println("__          ________          __   _____                            _             \n" +
+    System.out.println("__          ________          __   _____                            _\n" +
 "\\ \\        / / __ \\ \\        / /  / ____|                          (_)            \n" +
 " \\ \\  /\\  / / |  | \\ \\  /\\  / /  | |     __ _ _ __ ___  _ __   __ _ _ _ __   __ _ \n" +
 "  \\ \\/  \\/ /| |  | |\\ \\/  \\/ /   | |    / _` | '_ ` _ \\| '_ \\ / _` | | '_ \\ / _` |\n" +
