@@ -1,4 +1,7 @@
 import java.util.*;
+import java.awt.Desktop;
+import java.io.File;
+import java.net.URL;
 
 public class mainTeste2 {
 
@@ -7,28 +10,21 @@ public class mainTeste2 {
   public static int respect = 15;
   public static int knowledge = 0;
 
-  
-  static void equipAlinca(){
-    String equipamentoAlianca[] = { "Elmo-Ventobraviano", "Peitoral-Ventobraviano", "Mão Esquerda ", "Mão Direita",
-            "Constas", "Cintura", "Perneiras-Ventobravo", "Botas-Ventobravianas" };
-        for (int i = 0; i < equipamentoAlianca.length; i++) {
-          corpoPersonagem[i] = equipamentoAlianca[i];
-        }
-  }
-  static void equipHorda(){
-    String equipamentoHorda[] = { "Cabeça", "Peitoral do Sentinela", "Mão Esquerda ", "Mão Direita", "Constas",
-            "Cintura", "Perneiras do Sentinela", "Botas do Sentinela" };
-        for (int i = 0; i < equipamentoHorda.length; i++) {
-          corpoPersonagem[i] = equipamentoHorda[i];
-        }
-  }
   public static void main(String[] args) {
-       
 
     Scanner ler = new Scanner(System.in);
     int start, escolha;
 
-    System.out.println( "Seja bem-vindo a uma pequena experiência em uma fantastica narrativa dentro no universo de Warcraft (A Queda de Ventobravo)");
+    System.out.println("__          ________          __   _____                            _             \n" +
+"\\ \\        / / __ \\ \\        / /  / ____|                          (_)            \n" +
+" \\ \\  /\\  / / |  | \\ \\  /\\  / /  | |     __ _ _ __ ___  _ __   __ _ _ _ __   __ _ \n" +
+"  \\ \\/  \\/ /| |  | |\\ \\/  \\/ /   | |    / _` | '_ ` _ \\| '_ \\ / _` | | '_ \\ / _` |\n" +
+"   \\  /\\  / | |__| | \\  /\\  /    | |___| (_| | | | | | | |_) | (_| | | | | | (_| |\n" +
+"    \\/  \\/   \\____/   \\/  \\/      \\_____\\__,_|_| |_| |_| .__/ \\__,_|_|_| |_|\\__, |\n" +
+"                                                       | |                   __/ |\n" +
+"                                                       |_|                  |___/ ");
+    System.out.println(
+        "Seja bem-vindo a uma pequena experiência em uma fantastica narrativa dentro no universo de Warcraft (A Queda de Ventobravo)");
     System.out.println("(1) - Começar (2) - Sair");
     System.out.print("Escolha uma Opção: ");
     start = ler.nextInt();
@@ -37,27 +33,23 @@ public class mainTeste2 {
 
       Inicio();
       escolha = escolhaPersonagem();
-    
-      
+
       if (escolha == 1) {// Atribui os equipamentos da Aliança, Linha de historia da Aliança
         escolha = 0;
-        equipAlinca();
         escolha = historiaAliança01();
-        if(escolha == 1){//Historia Karazan
-       
 
-        }else{ //Hitoria Queda de Vento-Bravo
+        if (escolha == 1) {// Historia Karazan
+
+        } else { // Hitoria Queda de Vento-Bravo
 
         }
 
-
-      }else{// Atribui os equipamentos da Horda, Linha de historia da Horda
+      } else {// Atribui os equipamentos da Horda, Linha de historia da Horda
         escolha = 0;
-        equipHorda();
         escolha = historiaHorda01();
-        if(escolha == 1){//Historia Missão Especial
+        if (escolha == 1) {// Historia Missão Especial
 
-        }else{ //Hitoria Queda de Vento-Bravo
+        } else { // Hitoria Queda de Vento-Bravo
 
         }
       }
@@ -68,10 +60,10 @@ public class mainTeste2 {
 
   }
 
-  static void Inicio() { // Inicio da Historia
+  static void Inicio() { // Inicio da Historia (100%)
     Scanner er = new Scanner(System.in);
     String vazio;
-      int respeito = 15;
+    int respeito = 15;
 
     // Introdução de entrada da Historia.
     System.out.println(
@@ -130,33 +122,69 @@ public class mainTeste2 {
 
   }
 
-  static int escolhaPersonagem() {// Escolha o lado da batalha
+  static int escolhaPersonagem() {// Escolha o lado da batalha (100%)
     Scanner sc = new Scanner(System.in);
     Scanner cs = new Scanner(System.in);
-    String  vazio;
+    String vazio;
     int escolha;
 
     System.out.println("Escolha o seu lado da batalha");
-    System.out.println(
-        "Aliança: VocÊ vai ser um jovem soldado humano e vai  defender a cidade  das forças poderoça que marcham en direção a Vento Bravo");
-    System.out.println(
-        "Horda: Você vai assumir um Orc conrrompido pelo Sangue Vil do Clã Lobos de Gelo e ajudara a nova Horda a conquistar com o sangeu e furia o seu novo lar ");
-    // mostrar imagem dos modelos
+    System.out.println("Aliança: VocÊ vai ser um jovem soldado humano e vai  defender a cidade  das forças poderoça que marcham en direção a Vento Bravo");
+    System.out.println("OU");    
+    System.out.println("Horda: Você vai assumir um Orc conrrompido pelo Sangue Vil do Clã Lobos de Gelo e ajudara a nova Horda a conquistar com o sangeu e furia o seu novo lar ");
     System.out.println("(1) - Alinça (2) - Horda");
     System.out.print("Faça a sua escolha: ");
     escolha = sc.nextInt();
 
     if (escolha == 1) {// Escolheu Aliança
       System.out.println("VOCÊ ESCOLHEU ALIANÇA");
+      String equipamentoAlianca[] = { "Elmo-Ventobraviano", "Peitoral-Ventobraviano", "Mão Esquerda ", "Mão Direita",
+        "Constas", "Cintura", "Perneiras-Ventobravo", "Botas-Ventobravianas" };
+      
+      for (int i = 0; i < equipamentoAlianca.length; i++) {
+        corpoPersonagem[i] = equipamentoAlianca[i];
+      }
+        try{
+          URL url = mainTeste2.class.getResource("imagens/allianceSoldier.jpg");
+          Desktop desktop = Desktop.getDesktop();
+          
+          File file = new File(url.getFile());
+          
+          desktop.open(file);
+          
+          }catch(Exception e){
+            System.out.println("Erro");
+            e.printStackTrace();
+        }
       System.out.print("Escolha o nome do seu personagem: ");
       nomeHeroi = cs.nextLine();
       System.out.println("Seja bem-vindo ao Jogo, " + nomeHeroi);
       System.out.print("Aperte ENTER para continuar");
       vazio = cs.nextLine();
 
+
       return 1;
     } else {// Escolheu Horda
       System.out.println("VOCÊ ESCOLHEU HORDA");
+      String equipamentoHorda[] = { "Cabeça", "Peitoral do Sentinela", "Mão Esquerda ", "Mão Direita", "Constas",
+      "Cintura", "Perneiras do Sentinela", "Botas do Sentinela" };
+      
+      for (int i = 0; i < equipamentoHorda.length; i++) {
+        corpoPersonagem[i] = equipamentoHorda[i];
+      }
+
+      try{
+        URL url = mainTeste2.class.getResource("imagens/orcSoldier.png");
+        Desktop desktop = Desktop.getDesktop();
+        
+        File file = new File(url.getFile());
+        
+        desktop.open(file);
+        
+        }catch(Exception e){
+            System.out.println("Erro");
+            e.printStackTrace();
+        }
       System.out.print("Escolha o nome do seu personagem: ");
       nomeHeroi = cs.nextLine();
       System.out.println("Seja bem-vindo ao Jogo " + nomeHeroi);
@@ -167,21 +195,99 @@ public class mainTeste2 {
     }
   }
 
-  static void mostrarEquipamentos() { // Mostra os equipamentos do personagem
+  static void InventarioAliançaparte1() { // Mostra os equipamentos e mapa parte1 (100%)
+    Scanner ler = new Scanner(System.in);
+    int i, escolha,sair=0;
+    
+    do{
+      System.out.println("Escolha uma Opção");
+      System.out.print("[1] - Mapa [2] - Inventario: ");
+      escolha = ler.nextInt();
 
-    int i;
+      if(escolha == 1){
+        System.out.println("MAPA");
+        try{
+          URL url = mainTeste2.class.getResource("imagens/mapaAliancepart1.png");
+          Desktop desktop = Desktop.getDesktop();
+          
+          File file = new File(url.getFile());
+          
+          desktop.open(file);
+          
+          }catch(Exception e){
+              System.out.println("Erro");
+              e.printStackTrace();
+          }
+        escolha = 0;
+      }
+      if(escolha == 2){
+        System.out.println("INVENTÁRIO");
+        for (i = 0; i < corpoPersonagem.length; i++) {
+          System.out.print(corpoPersonagem[i] + " ");
+    
+        }
+        escolha = 0;
+      }
 
-    for (i = 0; i < corpoPersonagem.length; i++) {
-      System.out.print(corpoPersonagem[i] + " ");
+      System.out.println("Deseja Sair? ");
+      System.out.println("[1] Voltar Inventario [2] - Sair: ");
+      escolha = ler.nextInt();
+      
+      if(escolha == 2){
+        sair = 1;
+      }
 
-    }
+    }while(sair == 0);
+    
   }
 
-  static void mostrarMapa() {// Mostrar Mapa
+  static void InventarioHordaparte1() { // Mostra os equipamentos e mapa parte1 (100%)
+    Scanner ler = new Scanner(System.in);
+    int i, escolha,sair=0;
+    
+    do{
+      System.out.println("Escolha uma Opção");
+      System.out.print("[1] - Mapa [2] - Inventario: ");
+      escolha = ler.nextInt();
 
+      if(escolha == 1){
+        System.out.println("MAPA");
+        try{
+          URL url = mainTeste2.class.getResource("imagens/mapaHordepart1.png");
+          Desktop desktop = Desktop.getDesktop();
+          
+          File file = new File(url.getFile());
+          
+          desktop.open(file);
+          
+          }catch(Exception e){
+              System.out.println("Erro");
+              e.printStackTrace();
+          }
+        escolha = 0;
+      }
+      if(escolha == 2){
+        System.out.println("INVENTÁRIO");
+        for (i = 0; i < corpoPersonagem.length; i++) {
+          System.out.print(corpoPersonagem[i] + " ");
+    
+        }
+        escolha = 0;
+      }
+
+      System.out.println("Deseja Sair? ");
+      System.out.println("[1] Voltar Inventario [2] - Sair: ");
+      escolha = ler.nextInt();
+      
+      if(escolha == 2){
+        sair = 1;
+      }
+
+    }while(sair == 0);
+    
   }
 
-  static int historiaAliança01() {//Historia introdução Aliança Etapa 1
+  static int historiaAliança01() {//Historia introdução Aliança Etapa 1 (100%)
     Scanner er = new Scanner(System.in);
     Scanner re = new Scanner(System.in);
     String vazio;
@@ -189,29 +295,50 @@ public class mainTeste2 {
 
     // Introdução de entrada da Historia.
     System.out.println("Quando as forças de Azeroth e da Horda se enfrentaram no reino, os conflitos internos começaram a pesar nos dois exércitos. O rei Llane, que acreditava que os orcs bestiais eram incapazes de conquistar Azeroth, detestava sua posição em sua capital, Ventobravo. No entanto, Sir Lothar convenceu-se de que a batalha deveria ser levada diretamente ao inimigo, e ele foi forçado a escolher entre suas convicções e sua lealdade ao rei.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioAliançaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println(nomeHeroi +" é um renomado Sargento e um fiel subordinado do 1 tenente Vladimir do 25 batalhão de infantaria");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioAliançaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Vocês dois se encontra na sala de guerra dentro da bastilha de Vento Bravo onde se encontra o Rei Llane  e seu comandantes.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioAliançaparte1();
+      vazio = null;
+    };
     System.out.println();
 
     System.out.println("Entre eles o Sir Lothar um dos maiores comandante da Aliança e o único da mês que tinha enfrentados as novas ameças e saiu vivo e o Arch Mago Hadigar um iniciante de mago arcano e aluno da faculdade de Dalaran.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioAliançaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Entre eles o Sir.Lothar um dos maiores comandante da Aliança e o único que tinha enfrentado a nova ameça e saiu vivo para contar a historia e o Arch Mago Haddigar um iniciante de mago arcano e aluno da faculdade de Dalaran.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioAliançaparte1();
+      vazio = null;
+    }
     System.out.println();
+
     int numeroAleatorio = (int) (Math.random() * 10);
     if(numeroAleatorio>8){
       System.out.println("Você nota que há um livro jogado no chão \nDeseja ler o livro? \n Sim - 1 \n Não - 2");
@@ -224,8 +351,12 @@ public class mainTeste2 {
     }
 
     System.out.println("Depois de ver tantas notícias ruim de batalhões caindo, vilas queimadas, e morte.\nVladimir percebendo isso e foi  em sua direção.\ndireciona a palavra a você.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioAliançaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Vladimir - Com medo Nome do jogador?");
@@ -235,24 +366,36 @@ public class mainTeste2 {
     
     if(escolha == 1){
       System.out.println("Sim. Mas isso me faz pensar melhor pelo que está por vir !");
-      System.out.print("Aperte ENTER para continuar");
-      vazio = er.nextLine();
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioAliançaparte1();
+      vazio = null;
+    }
       System.out.println();
       escolha = 0;
       respect++;
     }else{
     
       respect--;
-        System.out.println("Vladimr olha para você com o olhar sério e fala\nPois deveria não sabemos como nosso inimigo luta, eles estão conquistando província após província logo logo estaram aqui");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.println("Vladimr olha para você com o olhar sério e fala\nPois deveria não sabemos como nosso inimigo luta, eles estão conquistando província após província logo logo estaram aqui");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioAliançaparte1();
+        vazio = null;
+      }
       System.out.println();
       escolha = 0;
     }
     
     System.out.println("Em Seguida entra um soldado correndo levando em sua mão uma mensagem sobre o forte Mirante de Pedra em Montanhas Cristarrubra e entrega o pergaminho ao Capital de Portões Leonidas.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioAliançaparte1();
+      vazio = null;
+    }
     System.out.println();
     
     System.out.println("Você quer escutar Leonidas lendo o relatório ?");
@@ -262,14 +405,22 @@ public class mainTeste2 {
 
     if(escolha == 1){
       System.out.println("Você se levanta e se aproxima da mesa de guerra");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioAliançaparte1();
+        vazio = null;
+      }
       System.out.println();
       knowledge++;
 
       System.out.println("Leônidas lê para todos proximos a mesa:");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioAliançaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       System.out.println("Relátorio:");
@@ -279,13 +430,21 @@ public class mainTeste2 {
       System.out.println();
 
       System.out.println("-Haddgar fala\nAs minhas fontes afirmam que através de um esforço conjunto, Medivh e os Warlocks do conselho das Sombras abriram o portal dimensional.");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioAliançaparte1();
+        vazio = null;
+      }
       System.out.println();
       
       System.out.println("-Rei Llane argumenta\nHadgar Lothar, recrute mais alguém para ir a Karazan deter Mediv!");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioAliançaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       escolha = 0;
@@ -299,22 +458,31 @@ public class mainTeste2 {
         System.out.println("Senhor! \n-Vladimir direcinona a fala a Lothar");
         System.out.println("Posso indicar um dos meus melhores homems. Habilidoso com espada e arco. "+nomeHeroi+"! Ele podera ser de grande ajuda!");
         System.out.print("Aperte ENTER para continuar");
+        System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
         vazio = er.nextLine();
-        System.out.println();
-        numeroAleatorio = (int) (Math.random() * 10);
-        if (numeroAleatorio<=5){
-          System.out.println("Vladimir não confia na sua habilidade");
-          respect--;
+        if(vazio.equals("i")){
+          InventarioAliançaparte1();
+          vazio = null;
         }
-        else{
-          System.out.println("Vladimir confia nas suas habilidades");
-        respect++;
-        }
+
+        // numeroAleatorio = (int) (Math.random() * 10);
+        // if (numeroAleatorio<=5){
+        //   System.out.println("Vladimir não confia na sua habilidade");
+        //   respect--;
+        // }
+        // else{
+        //   System.out.println("Vladimir confia nas suas habilidades");
+        // respect++;
+        // }
 
         System.out.println("-Lothar direciona as palavras a você");
         System.out.println(nomeHeroi+" Se prepare, não vai ser nada facil...");
-        System.out.print("Aperte ENTER para continuar");
+        System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
         vazio = er.nextLine();
+        if(vazio.equals("i")){
+          InventarioAliançaparte1();
+          vazio = null;
+        }
         System.out.println();
 
         corpoPersonagem[2] = "Espada de Duas Mão";
@@ -327,9 +495,18 @@ public class mainTeste2 {
     }
 
     System.out.println("(Todos na sala escutam as trombetas na cidade)\n -Rei Llane dá a Ordem\nTODOS NA SUA POSIÇÃO!\nPELA ALIANÇA!!!");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+     InventarioAliançaparte1();
+     vazio = null;
+    }
     System.out.println();
+
+    corpoPersonagem[2] = "Arco Longo";
+    corpoPersonagem[3] = "Arco Longo";
+    corpoPersonagem[5] = "Espada Curta";
+
     return 2; //Chama Main Quest historiaQuedaDeVentoBravo();
 
 
@@ -343,63 +520,103 @@ public class mainTeste2 {
     int escolha;
     
     System.out.println("Depois de conquistarem terras após terras, a horda desce em direção ao Sul.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Você consegui escapar da traição do Conselho das Sombras após ver seu lider Durotan e sua mulher Greta serem assassinados pelo clã da Lua Negras, comandados por Gul’Dan...");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Você e seus amigos  Sion, Yorick e a meia Orc Garona fogem em direção ao Sul para se encontrar com os outros Clãs Orc para informar o acontecimento.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Voces chegam em uma região de campinas, onde tem grandes campos de plantio mas com rastros de destruição...");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Ao leste, uma grande fumaça preta cobre o ceú. \nVocês resolvem verificar oque está acontecendo...");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("(Alguns minutos de caminhada)");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioAliançaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Ao meio dia vocês passam ao lado de torres em chamas, logo mais acima da montanha, conseguem ver a bandeira da Horda tribulando em cima de um castelo de pedra");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Em seu portão conseguem ver BlackHand segurando um jovem soldado humano pelo pescoço e a outra sua Garra Longa atravessando a sua barriga.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
-    int numeroAleatorio = (int) (Math.random() * 10);
-    if(numeroAleatorio>5){
-      System.out.print("Você acabou demonstrando empatia pelo humano...");
-    respect--;
-    }
-    else{
-      System.out.print("Você não demonstra empatia pelo humano...");
-      respect++;
-    }
+    // int numeroAleatorio = (int) (Math.random() * 10);
+    // if(numeroAleatorio>5){
+    //   System.out.print("Você acabou demonstrando empatia pelo humano...");
+    // respect--;
+    // }
+    // else{
+    //   System.out.print("Você não demonstra empatia pelo humano...");
+    //   respect++;
+    // }
 
     System.out.println("Ao se aproximarem Ogrim fica feliz que o clã de seu melhor amigo veio se juntar a eles\n Mas logo percebe o pior apenas vendo vocês três\nBlackHand direciona um olhar de satisfeito e com um sorriso sarcastico.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Você sabe que Ogrim DoonHammer é o melhor amigo de Durotan");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Você quer passar as noticias para Ogrim ou BlackHand ?");
@@ -409,33 +626,57 @@ public class mainTeste2 {
 
     if(escolha == 1){//Fala com o BlackHand
       System.out.println("Warchief BlackHand tivemos uma traição entre nos.\nFomos atacado pelo clã Lua Negra a uma noite Durotan e Greta foram mortos!");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
       
       System.out.println("BlackHand olha com um olhar de satisfeitos e diz!");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       System.out.println("E a Criança ?");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       System.out.println("Acredito que tambem está morta !");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       System.out.println("Os fracos nunca terão vez no novo mundo");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       System.out.println("Você fica assuntado com a resposta\nMas não pode fazer nada por que você é apenas um Soldado");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       escolha = 0;
@@ -449,8 +690,12 @@ public class mainTeste2 {
 
       if(escolha == 1){
         System.out.println("Ogrim! Ogrim DoonHammer! fomos traido o Clã Lua Negra nos atacou durante a noite não tivemos chance de nos defender\n Durotan e Greta estão mortos");
-        System.out.print("Aperte ENTER para continuar");
+        System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
         vazio = er.nextLine();
+        if(vazio.equals("i")){
+          InventarioHordaparte1();
+          vazio = null;
+        }
         System.out.println();
 
         System.out.println("Isso não é possível\n Durotan, Greta meu amigo!,");
@@ -459,42 +704,70 @@ public class mainTeste2 {
         System.out.println();
 
         System.out.println("E o filho deles ?");
-        System.out.print("Aperte ENTER para continuar");
+        System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
         vazio = er.nextLine();
+        if(vazio.equals("i")){
+          InventarioHordaparte1();
+          vazio = null;
+        }
         System.out.println();
 
         System.out.println("Não Sabemos!");
-        System.out.print("Aperte ENTER para continuar");
+        System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
         vazio = er.nextLine();
+        if(vazio.equals("i")){
+          InventarioHordaparte1();
+          vazio = null;
+        }
         System.out.println();
 
         System.out.println("Ogrim direciona o olhar com muita raiva para BlacHand");
-        System.out.print("Aperte ENTER para continuar");
+        System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
         vazio = er.nextLine();
+        if(vazio.equals("i")){
+          InventarioHordaparte1();
+          vazio = null;
+        }
         System.out.println();
 
         
       }else{
         System.out.println("Garona olha para com olhar de raiva e diz");
-        System.out.print("Aperte ENTER para continuar");
+        System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
         vazio = er.nextLine();
+        if(vazio.equals("i")){
+          InventarioHordaparte1();
+          vazio = null;
+        }
         System.out.println();
 
         System.out.println("Quem é o Traidor ?!");
-        System.out.print("Aperte ENTER para continuar");
+        System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
         vazio = er.nextLine();
+        if(vazio.equals("i")){
+          InventarioHordaparte1();
+          vazio = null;
+        }
         System.out.println();
 
       }
     }
     System.out.println("Ao anoitecer o você se encontra sentado em um banco em um corredor de pedra dentro da fortaleza recém-conquistada perto de uma das salas que os lideres dos clãs estão discutindo os próximos passos.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
     
     System.out.println("Ao seu lado o seu amigo Sion");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Você quer fala com Sion?");
@@ -503,46 +776,78 @@ public class mainTeste2 {
 
     if(escolha == 1){
       System.out.println("você vira para o seu amigo e fala");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       System.out.println("Oque você acha que vai acontecer com o nosso clã logo que o nosso lider esta morto?");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       System.out.println("Antes mesmo de Sion começar a falar, você olha para o lado...");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
       escolha = 0;
 
       
     }
     System.out.println("Você vê Ogrim e Garona em passos rapidos em direção a porta onde estão os lideres dos Clãs Orcs");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Ogrim entra na porta com e chama BlackHand para um Mak’Gora um ritual de duelo para revindicar alguma a liderança da horda e vingar a morte do seu amigo.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Ambos vão para o pátio da fortaleza onde Ogrim derrota BlackHand o boneco de Gul’Dan e assumi a liderança da horda.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Ogrim após a vitória se levanta com a feição de cansaço olhando para todos no  pátio  e grita.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
     
     System.out.println("VAMOS ACABAR COM ESSA GUERRA DE UMA VEZ POR TODAS\nOcta’Rogar!!!!!!!!!!!! ");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Na manha seguinte todos os clãs marcham para Oeste em direção a umas das maiores cidade dos humanos. Conhecida como Vento-Bravo.");
@@ -551,23 +856,39 @@ public class mainTeste2 {
     System.out.println();
 
     System.out.println("Em marchar você escuta a voz de Garona \n"+nomeHeroi+"!");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Fui designada a uma missão especial");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Você olha para Garona com um olhar reprido");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println(" Eu já fui capturada por eles e sei algumas passagens que cortam a cidade e gostaria que você fosse comigo.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Você quer ir com a Garona ?");
@@ -578,13 +899,21 @@ public class mainTeste2 {
     if(escolha == 1){
         respect++;
       System.out.println("Garona fica feliz com a sua escolha ");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       System.out.println("Eu sabia que você não ia falar não");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       corpoPersonagem[2] = "Adaga-Envenenada";
@@ -595,30 +924,50 @@ public class mainTeste2 {
     }else{
         respect--;
       System.out.println("Garona fica com o olhar de pesado\n Tudo bem ! ");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
 
       System.out.println("Eu entendo !");
-      System.out.print("Aperte ENTER para continuar");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
+      if(vazio.equals("i")){
+        InventarioHordaparte1();
+        vazio = null;
+      }
       System.out.println();
 
     }
 
     System.out.println("VocÊ continua com a marcha e responde a garona");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Vou honrar os ultimos membros do meu clã em batalha.");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     System.out.println("Octa’Rogar");
-    System.out.print("Aperte ENTER para continuar");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
     vazio = er.nextLine();
+    if(vazio.equals("i")){
+      InventarioHordaparte1();
+      vazio = null;
+    }
     System.out.println();
 
     return 2;
