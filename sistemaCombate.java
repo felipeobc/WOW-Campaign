@@ -71,6 +71,7 @@ public class sistemaCombate {
     Scanner leitor = new Scanner(System.in);
 
     while (HP > 0 && eHP > 0) {
+      
       System.out.println("Você pode escolher: \n\n(1) - ATACAR\n\n(2) - CORRER\n\n(3) - TOMAR POÇÃO DE CURA");
       escolher = leitor.nextInt();
 
