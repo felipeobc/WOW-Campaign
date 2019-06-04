@@ -1,5 +1,4 @@
 import java.util.*;
-
 import java.awt.Desktop;
 import java.io.File;
 import java.net.URL;
@@ -9,7 +8,7 @@ public class mainTeste2 {
   public static String[] corpoPersonagem = new String[8];
   public static String nomeHeroi;
   public static int HP = 100, eHP = 40;
-  public static int respect = 15;
+  public static int respect = 8;
 
   public static void main(String[] args) {
 
