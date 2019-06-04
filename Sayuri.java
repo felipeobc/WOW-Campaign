@@ -12,7 +12,7 @@ public class Sayuri {
     public static int Joia() {
         Scanner leitor = new Scanner(System.in);
         int[] fragmento3;
-        fragmento3 = new int[1];
+        fragmento3 = new int[2];
         int escolha12;
         System.out.println("\n1.Pegar a chave.\n\n"
                 + "Tentei pegar a chave, e de repente o homem se levantou e tentou me atacar. Me esquivei, ele caiu no chão\n"
