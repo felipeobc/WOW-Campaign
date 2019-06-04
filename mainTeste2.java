@@ -53,6 +53,8 @@ public class mainTeste2 {
 
         } else { // Hitoria Queda de Vento-Bravo
 
+          finalHistoriaHorda();
+
         }
       }
 
@@ -2324,14 +2326,769 @@ public class mainTeste2 {
     }
   }
 
-  public static void finalHistoriaHorda() {
+
+  static void historiaConquistaVentoBravo() {
     Scanner er = new Scanner(System.in);
     Scanner re = new Scanner(System.in);
     String vazio;
+    int escolha, batalha;
 
-    if (respect > 8) {
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "Após escultar as trombetas soarem você rapidamente pega seu arco, e sua espada e corre em direção ao portão principal da cidade. No caminho até o portão você observa muitas famílias desesperadas correndo em direção  ao Porto de Vento-Bravo onde a 7 e a 9 legião e outros  pescadores voluntários estão levando as a população para um lugar seguro. Em direção ao reino de Lorderom.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "Chegando na muralha você observa  soldados  correndo para todos os lados assumindo as suas posições. ");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Você desce do cavalo e começa a subir as escadas para o topo da muralha.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "O silêncio consome  o topo da muralha, e ao observar além dela só se consegue ver a fumaça das pequenas casas ao redor de Vento Bravo e uma vasta mancha verde de Orcs com armas de cerco e tochas.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "Por toda dimensão da muralha, Soldados com arcos e armaduras pesadas estão ao seu lado com o olhar fixo para o horizonte e aguardam os próximos passos da batalha.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Morgan o 1 tenente da muralha sobe as escadas com as duas mão para trás e fica ao seu lado.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(nomeHeroi + ": Oficial presente!! ");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Você fica em posição de sentido.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Morgam: A vontade!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "Ao observar o horizonte você consegue ver um Orc subindo em uma pedra, e pronunciado em um idioma no qual você não consegue entender. E antes mesmo que ele esse mesmo Orc consiga  terminar sua frase um tiro de flecha não autorizado voa em direção as tropas atingindo em cheio um Orc na cabeça.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "O orc cai no chão e em seguida as armas de cerco começão a disparar e as tropas de orcs a correr em direção ao portão.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Morgan saca sua espada e começa a gritar.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Morgan: É CHEGADA  A HORA  HOMEM PREPAREM-SE!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Após o a ordem de Morgan, você e todos os soldados preparam seus arcos.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Morgan: ESPEREM!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Os orcs começam a chegar mas perto!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Morgan: ESPEREM!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Os orcs começam a chegar mas perto!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("Morgan: ESPEREM!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Os orcs começam a chegar mas perto!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Morgan: DISPAREM TODAS AS NOSSO FORÇAS NESSES MALDITOS! PELA ALIANÇA!!!!!!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("E as flechas ganham os fazendo uma grande sobra abaixo delas.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("As flechas cai e abatendo uma grande quantidade de orcs.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Mas não é o suficiente");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Os orcs começam a chegar mas perto!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "Você observar uma grande bola em chamas atingir as muralhas perto de onde você estava, e vê  um pedaço da muralha cair levando alguns soldados pegando fogo e morrendo quase que instantaneamente  ao serem atingido pelos os destroços.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out
+        .println("O caos é instaurado entres os soldados  quando eles observam os orcs colocando escadas na muralha.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Uma bola de fogo está preste a atingir alguns soldados na sua frente!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("Você percebe que consegue  ajudar os soldados que estão  preste a ser atingido");
+    System.out.println("Quer ajuda-los?");
+    System.out.println("Qual a sua Resposta ?");
+    System.out.print("(1) - Sim (2) - Não");
+    escolha = re.nextInt();
+
+    corpoPersonagem[2] = "Mão Esquerda";
+    corpoPersonagem[3] = "Mão Direita";
+
+    if (escolha == 1) {
+      HP -= 15;
+
       System.out.println("HP - " + HP);
-      System.out.println("Você e seus irmão  vence aquela investida e vê os humanos correndo para as grandes Canoas de madeiras.");
+      System.out.println(
+          "A bola de fogo atingi a muralha arremessando para fora dela e caindo no rios dos Vales dos Herois.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Por conta da explosão está você afundado e um pouco desnortiado.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Você consegue observar do outro lado do rio um grupo pequeno de orcs entrando pelos os dutos  de esgoto de vento bravo.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Mas antes mesmo de apagar você consegue ver uma mão te pegando e tirando você da água.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("E grita!.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Soldado 1: Acorda Sargento, Acord……");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Uma explosão forte acontece perto de vocês e um pedaço de madeira acaba atingido o soldado pelas costas que morre na hora olhando para você");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Ao olhar para cima você já consegue ver as muralhas tomadas pelos o peles verdes.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Na ponte você consegue ver Vladimir com uma tropa de soldados com grandes escudos e lanças  ajudando os soldados remanescentes a recuarem.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out
+          .println("A unica reação é correr para ponte que leva para o segundo portão seguindo as ordens de Morgan!");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+    } else {
+
+      corpoPersonagem[3] = "Espada Curta";
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Você vê a bola de fogo atingindo em cheio a muralha arremessando os soldados na quela posição para trás fazendo eles caírem.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "E você é arremessando para o lado, você fica com a visão turva, e sua audição fica  baixa com se você estivesse com as mãos  tampando seus ouvidos.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Em sua frente aprese um dos orcs subindo a escada um soldado consegue  pega-lo com uma espadada. Mas com o segundo Orc ele não tem tanta sorte e o Orcs acaba matando o soldado.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Um terceiro aparece rapidamente e vai na sua direção. Com rapidez você consegue pegar a sua espada e consegue se defender do primeiro ataque.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+      // Batalha:
+
+      batalha = sistemaCombate();
+      if (batalha == 0) {
+
+        System.out.println("O Orc acerta você na costela.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println("Você cai de joelho perto da berada da muralha.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println("Orc: Groaaaaaaaaaarrrrrrrrrr!!! ");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println(
+            "E lhe dar um ponta pé pelas costas fazendo você cair do alto da muralha no  rio do Vale dos Heróis.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println(
+            "Um terceiro aparece rapidamente e vai na sua direção. Com rapidez você consegue pegar a sua espada e consegue se defender do primeiro ataque.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        return;
+
+      } else if (batalha == 2) {
+        HP -= 20;
+
+        System.out
+            .println("Você consegue esquivar porém um ele consegue lhe acertar fazendo um pequeno corte na sua perna!");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+      } else if (batalha == 1) {
+
+        System.out.println(
+            "Você esquiva e o acerta com um único golpe na barriga e outro no pescoço separando a cabeça do corpo.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+      }
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "E meios o caos e os orcs aos montes dominado a muralha Morgan dá as ordens para o recuar dos soldados remanescentes.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Morgan: RECUAR SOLDADOS!!! PARA  O SEGUNDO PORTÃO VAMOOOOOSSSSSSSSSS!!!!");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Ao descer as escadas em meio ao caos e explosões e orcs dominando a muralha.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Você passa em frente  ao primeiro portão que já está quase caindo e  a sua frente um pequeno batalhão de soldados com lanças e escudos.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out
+          .println("Você observa Morgan atrás das tropas de Vladimir auxiliando os restantes dos soldados a recuarem.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Vladimir Olha para você.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Vladimir: Que bom que você está vivo.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "No exato momento que você passa  pelos batalhões. O primeiro portão cai em fogo e destroços, e atrás dele orcs montados em lobos gigantes. Matando os soldados que passam a frentes deles. Aquilo é realmente uma carnificina mediante aos seus olhos. Era algum que você nunca já mais viu.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("E investe para cima das tropas de contenção de escudo e lanças.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Eles não vão conseguir aguentar por muito tempo.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Você chega ao segundo portão que é entrada que dá acesso ao centro da cidade o Distrito Comercial.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Mas todos sabem que as grades de aço não vão  aguentar por muito tempo.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Você continua vendo as bolas de fogo, batendo na segunda muralha, soldados ofegantes, Sacerdotes curando os feridos em quanto eles recuam. ");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Morgan: Nem todos os solados recuaram, perdi quase todos os meus homens");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Apos a fala de Morgan observa Vladimir aprece com poucos soldados e atrás deles os portões de grades reforçadas fechando.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Vladimir: eles tomaram a ponte dos Vale dos Herois, devemos ajudar na evacuação do povo, eles estão em grande número e avançado em grandes quantidades, eu vou para Cidade Velha em direção a Bastilha Ventobravo.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Morgan: Vou leva minhas tropas para o Distrito dos Mag……");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Uma grande de explosão acontece na muralha fazendo  os portões cairem.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Os orcs passam pelos portões gritando com raiva e com sede de sangue indo a direção  de vocês na Vladimir lança a sua lança acetando em cheio o peitos de um deles, Morgan pega o seu arco consegue acertar dois  antes mesmo ele consiga chegar nele.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      batalha = sistemaCombate();
+      if (batalha == 0) {
+
+        System.out
+            .println("O orc consegue te desarmar e impala você com a sua própria espada,  o jogando você no chão.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        return;
+
+      } else if (batalha == 2) {
+        HP -= 20;
+
+        System.out.println(
+            "Você consegue se esquivar do ataque  mas a toma uma cotovelada e com medo acaba correndo em direção a Praça da  Catedral. Porem devido uma explosão faz você  recuar e correr em direção a Cidade Velha.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+      } else if (batalha == 1) {
+
+        System.out.println(
+            "Você consegue defender um ataque certeiro em você e contra ataca com um golpe na barriga fazendo um grande corte.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+      }
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Com o caos instaurado em toda a cidade, você apenas consegue observar morte por todo lado com, orcs, humanos, o cheiro de sangue misturado com cinzas das casas queimando, gritos e pessoas chorando, aquilo tudo te deixa com muito medo.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Vladimir  posiciona alguns soldados na ponte onde liga  o Disrtrito Comercial com a Cidade Velha. Você mantêm a sua posição em quanto os orcs avançam.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      batalha = sistemaCombate();
+      if (batalha == 0) {
+
+        System.out.println("O orce acerta um golpe na sua barriga fazendo você sangra e você cai da ponte.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        return;
+
+      } else if (batalha == 2) {
+        HP -= 20;
+
+        System.out.println("você recua para atrás das tropas");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+      } else if (batalha == 1) {
+
+        System.out.println("Você consegue pegar  investir com um contra ataque acertando o pescoço do inimigo");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+      }
+
+      System.out.println();
+      System.out.println("Você quer Armar a Bomba?");
+      System.out.println("Qual a sua Resposta ?");
+      System.out.print("(1) - Sim (2) - não");
+      escolha = re.nextInt();
+
+      if (escolha == 1) {
+        System.out.println("HP - " + HP);
+        System.out.println(nomeHeroi + ": Eu faço isso!");
+        System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+        vazio = er.nextLine();
+        if (vazio.equals("i")) {
+          InventarioAliançaparte1();
+          vazio = null;
+        }
+        System.out.println();
+
+        sideQuest();
+        escolha = 0;
+
+      }
+    } // eeeee
+
+    System.out.println("HP - " + HP);
+    System.out.println("Você consegue  dar mais tempo para os cidadãos recuarem.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Vladimir da ordem para vocês recuarem.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Vladimir: Homens agora!!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "O soldado acende o pavio das bombas que estão armada de baixo da ponte fazendo a explodir levando alguns orcs juntos.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Sua armadura está agora com manchas de sangue após a explosão.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Mesmo ao caos espalhado pela cidade, vocês consegue esvaziarem  a Cidade Velha.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Vladimir direciona para você.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Vladimir: Vou para a Bastilha. Você vem comigo?");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println();
+    System.out.println("Você quer acompanhar Vladimir?");
+    System.out.println("Qual a sua Resposta ?");
+    System.out.print("(1) - Sim (2) - não");
+    escolha = re.nextInt();
+
+    if (escolha == 1) {
+
+      System.out.println("HP - " + HP);
+      System.out.println("Vocês chegam na Bastilha-Vento Bravo.");
       System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
       if (vazio.equals("i")) {
@@ -2341,7 +3098,432 @@ public class mainTeste2 {
       System.out.println();
 
       System.out.println("HP - " + HP);
-      System.out.println("A cidade está destruída, quase tudo em reiunas, e aquele maldito barulho do centro da cidade tinha cessado.");
+      System.out.println(
+          "E ao chegar nas escadarias vocês observam caindo a frente da faxada uma grande bandeira de cor vermelha com  um símbolo estranho e um Grifo com a Príncipe Varian e o General Lothar voando para bem longe. ");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+      vazio = er.nextLine();
+      if (vazio.equals("i")) {
+        InventarioAliançaparte1();
+        vazio = null;
+      }
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Os sinos da catedral soam anunciando a morte do Rei.");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+      vazio = er.nextLine();
+      if (vazio.equals("i")) {
+        InventarioAliançaparte1();
+        vazio = null;
+      }
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Ao entrarem dentro da bastilha você apenas consegue observar o General Leônidas morto e outro Orc erguendo o corpo do Rei Llane como se fosse um trofel e ao seu lado com mais dois orcs comemorando a sua vitória.");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+      vazio = er.nextLine();
+      if (vazio.equals("i")) {
+        InventarioAliançaparte1();
+        vazio = null;
+      }
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Vladimir fica em pânico e como se o mundo dele estivesse acabado, e com o olhar triste.");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+      vazio = er.nextLine();
+      if (vazio.equals("i")) {
+        InventarioAliançaparte1();
+        vazio = null;
+      }
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Vladimir: Estamos perdido!");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+      vazio = er.nextLine();
+      if (vazio.equals("i")) {
+        InventarioAliançaparte1();
+        vazio = null;
+      }
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out
+          .println(nomeHeroi + ": É tarde de mais Vladimir devemos ir embora agora, podemos vencer em outro momento.");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+      vazio = er.nextLine();
+      if (vazio.equals("i")) {
+        InventarioAliançaparte1();
+        vazio = null;
+      }
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println("Nesse momento aparecem dois  Orcs todos com grandes machadados que vão para cima de vocês.");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+      vazio = er.nextLine();
+      if (vazio.equals("i")) {
+        InventarioAliançaparte1();
+        vazio = null;
+      }
+      System.out.println();
+
+      batalha = sistemaCombate();
+      if (batalha == 0) {
+
+        System.out.println("O orc acerta um golpe na sua barriga fazendo você sangrar até a morte.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        return;
+
+      } else if (batalha == 2) {
+        HP -= 20;
+
+        System.out.println("Você  sai correndo deixando Vladimir para trás");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+      } else if (batalha == 1) {
+
+        System.out.println("Voce consegue golpeá-lo na garganta e com um gemido a criatura cai no chão.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println("Você olha para o lado e vê mais orcs chegando.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println("Vladimir olha com os olhos cheios de lágrimas.");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+        System.out.println("Vladimir: Vá " + nomeHeroi + " darei mais tempo para vocês");
+        System.out.print("Aperte ENTER para continuar");
+        vazio = er.nextLine();
+        System.out.println();
+
+      }
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Chegando no Dsitrito dos Anões  você  e vendo tudo ao seu redor  pegando  fogo, muito corpos no chão,  e os sinos da Catedral  não paravam de tocar anunciando a mote do rei.  E a queda da cidade fazendo todo os seus cidadãos abandonarem a cidade.");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+      vazio = er.nextLine();
+      if (vazio.equals("i")) {
+        InventarioAliançaparte1();
+        vazio = null;
+      }
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Logo atrás de vocês vem vindo uma manada de Orcs sedentos por sangue, você se vê ao meio alguns soldados.");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+      vazio = er.nextLine();
+      if (vazio.equals("i")) {
+        InventarioAliançaparte1();
+        vazio = null;
+      }
+      System.out.println();
+
+      sideQuest();
+      escolha = 0;
+
+    }
+
+    System.out.println("HP - " + HP);
+    System.out.println(nomeHeroi + ": ATENÇÃO HOMENS!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(nomeHeroi + ":Nós somos os últimos homens que protege os civis.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "Os Orcs conseguem passar pelos portões que ligam a Cidade Velha e a Bastilha com o Distrito dos Anões.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(nomeHeroi + ": HOMENS POSIÇÃO DE DEFESAS.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Os Orcs correm com fúria para a direção de vocês.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "Você observando o rostos dos soldados em desesperos começa a pronunciar o juramento do quartel em voz alta.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(nomeHeroi
+        + "A NOITE CHEGA, E AGORA COMEÇA A MINHA VIGIA. NÃO TERMINARÁ ATÉ A MINHA MORTE VIVEREI E MORREREI NO MEU POSTO. SOU A ESPADA NA ESCURIDÃO.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Todos: SOU A ESPADA NA ESCURIDÃO");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "Todos: SOU O FOGO QUE ARDE CONTRA O FRIO, A LUZ QUE TRAZ CONSIGO A ALVORADA, A TROMBETA QUE ACORDA OS QUE DORMEM, O ESCUDO QUE DEFENDE OS REINOS DOS HOMENS.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "Todos:  Dou a minha vida e a minha honra à Aliança, por esta noite e por todas as noites que estão para vir.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Todos: AAAAAAAAAAAAAAAAAAAAHHHHHHHHHHHHHHHHHH!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    batalha = sistemaCombate();
+    if (batalha == 0) {
+
+      System.out.println("O Orc o golpeia quebrando sua armadura e o jogando no chão.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      return;
+
+    } else if (batalha == 2) {
+      HP -= 20;
+
+      System.out.println("Um dos soldados entra na sua frente e acaba sendo morto em seu lugar");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+    } else if (batalha == 1) {
+
+      System.out.println("você consegue uma investida contra o inimigo o atingindo pelas costas");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+    }
+
+    batalha = sistemaCombate();// 1
+    if (batalha == 0) {
+
+      System.out.println(
+          "Após  se levantar  o Orcs pega você pelo vão da armadura erguendo você o chão  e o apunhalando com uma faca em sua barriga!");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      return;
+
+    } else if (batalha == 2) {
+      HP -= 20;
+
+      System.out.println("Com medo da investida foras do Orc você vai para trás dos homens que estão  atrás de você.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+    } else if (batalha == 1) {
+
+      System.out.println(
+          "Voce consegue desviar de uma lança que voava em sua direção e coloca o corpo do Orcs em sua direção a lança atravessa o mostro o fazendo gemer bem alto.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+    }
+
+    System.out.println("HP - " + HP);
+    System.out.println("Uma explosão acontece perto de você.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out
+        .println("Nesse momentos seus ouvidos são  tapados e você apenas consegue escutar a sua própria respiração.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out
+        .println("Mas antes mesmo que receber o golpe de misericórdia você consegue defender ao o ataque do Orc.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    batalha = sistemaCombate();// 1
+    if (batalha == 0) {
+
+      System.out.println("Você é atingido por uma lança na nuca fazendo atravessar seu rosto.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+      return;
+
+    } else if (batalha == 2) {
+      HP -= 20;
+
+      System.out.println("Você recua para as rampas em direção ao Porto.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+    } else if (batalha == 1) {
+
+      System.out.println(
+          "Você o acerta com toda a sua força na região da barriga. Fazendo  a sua arma atravessar para o outro lado.");
+      System.out.print("Aperte ENTER para continuar");
+      vazio = er.nextLine();
+      System.out.println();
+
+    }
+
+    System.out.println("HP - " + HP);
+    System.out.println(
+        "Vocês conseguem ver o sinal de fumaça emitido pelos magos anunciando que os últimos civis embarcaram.");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Voce da  ordem para os últimos soldados a recuarem");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+    System.out.println("HP - " + HP);
+    System.out.println("Nome do jogador: Recuar….. Recuar…. !!!");
+    System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+    vazio = er.nextLine();
+    if (vazio.equals("i")) {
+      InventarioAliançaparte1();
+      vazio = null;
+    }
+    System.out.println();
+
+  }
+
+  
+  public static void finalHistoriaHorda() {
+    Scanner er = new Scanner(System.in);
+    Scanner re = new Scanner(System.in);
+    String vazio;
+
+    if (respect > 8) {
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "Você e seus irmão  vence aquela investida e vê os humanos correndo para as grandes Canoas de madeiras.");
+      System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
+      vazio = er.nextLine();
+      if (vazio.equals("i")) {
+        InventarioAliançaparte1();
+        vazio = null;
+      }
+      System.out.println();
+
+      System.out.println("HP - " + HP);
+      System.out.println(
+          "A cidade está destruída, quase tudo em reiunas, e aquele maldito barulho do centro da cidade tinha cessado.");
       System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
       if (vazio.equals("i")) {
@@ -2391,7 +3573,8 @@ public class mainTeste2 {
       System.out.println();
 
       System.out.println("HP - " + HP);
-      System.out.println("Ogrim: Hoje cai nosso inimigo e com ele surge a PAZ. Hoje começaremos uma nova história para nossos clãs unidos em uma única bandeira.");
+      System.out.println(
+          "Ogrim: Hoje cai nosso inimigo e com ele surge a PAZ. Hoje começaremos uma nova história para nossos clãs unidos em uma única bandeira.");
       System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
       if (vazio.equals("i")) {
@@ -2433,7 +3616,8 @@ public class mainTeste2 {
     } else {
 
       System.out.println("HP - " + HP);
-      System.out.println("Você e seus irmão  vence aquela investida e vê os humanos correndo para as grandes Canoas de madeiras.");
+      System.out.println(
+          "Você e seus irmão  vence aquela investida e vê os humanos correndo para as grandes Canoas de madeiras.");
       System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
       if (vazio.equals("i")) {
@@ -2471,7 +3655,6 @@ public class mainTeste2 {
         vazio = null;
       }
       System.out.println();
-      
 
       System.out.println("HP - " + HP);
       System.out.println("você olha nos seus olhos");
@@ -2484,7 +3667,7 @@ public class mainTeste2 {
       System.out.println();
 
       System.out.println("HP - " + HP);
-      System.out.println(nomeHeroi+": Eu sei que ainda não acabou e que vamos nos encontra muitas e muitas vezes.");
+      System.out.println(nomeHeroi + ": Eu sei que ainda não acabou e que vamos nos encontra muitas e muitas vezes.");
       System.out.print("Aperte ENTER para continuar ou [i] - INVENTÁRIO: ");
       vazio = er.nextLine();
       if (vazio.equals("i")) {
