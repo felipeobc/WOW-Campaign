@@ -7,7 +7,7 @@ public class mainTeste2 {
 
   public static String[] corpoPersonagem = new String[8];
   public static String nomeHeroi;
-  public static int HP = 100, eHP = 40;
+  public static int HP = 175, eHP = 40;
   public static int respect = 8;
 
   public static void main(String[] args) {
@@ -3390,6 +3390,7 @@ public class mainTeste2 {
       HP = HP - DMG;
     }
     eHP = 0;
+    respect--;
   }
 
   public static void potion() {
