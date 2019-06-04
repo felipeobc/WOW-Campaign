@@ -8,7 +8,7 @@ public class mainTeste2 {
 
   public static String[] corpoPersonagem = new String[8];
   public static String nomeHeroi;
-  public static int HP = 300, eHP = 40;
+  public static int HP = 100, eHP = 40;
   public static int respect = 15;
 
   public static void main(String[] args) {
@@ -2337,7 +2337,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2347,7 +2347,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2357,7 +2357,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2367,7 +2367,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2377,7 +2377,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2387,7 +2387,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2397,7 +2397,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2407,7 +2407,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2417,7 +2417,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2427,7 +2427,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2437,7 +2437,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2447,7 +2447,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2457,7 +2457,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2467,7 +2467,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2477,7 +2477,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2487,7 +2487,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2644,7 +2644,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2654,7 +2654,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2664,7 +2664,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2674,7 +2674,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2684,7 +2684,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2694,7 +2694,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2712,7 +2712,7 @@ public class mainTeste2 {
       System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
       vazio = er.nextLine();
       if (vazio.equals("i")) {
-        InventarioHordaparte1();
+        historiaAliança01();
         vazio = null;
       }
       System.out.println();
@@ -2727,7 +2727,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2737,7 +2737,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2747,7 +2747,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2757,7 +2757,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2767,7 +2767,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2777,7 +2777,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2787,7 +2787,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2797,7 +2797,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2807,7 +2807,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2817,7 +2817,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2827,7 +2827,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2837,7 +2837,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2847,7 +2847,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2857,7 +2857,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2867,7 +2867,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2877,7 +2877,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2887,7 +2887,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2897,7 +2897,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2907,7 +2907,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2917,7 +2917,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2954,7 +2954,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2964,7 +2964,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2974,7 +2974,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2984,7 +2984,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -2994,7 +2994,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -3058,7 +3058,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -3069,7 +3069,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
@@ -3079,7 +3079,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
 
@@ -3088,7 +3088,7 @@ public class mainTeste2 {
     System.out.print("Aperte ENTER para continuar ou [i] - INVENTARIO: ");
     vazio = er.nextLine();
     if (vazio.equals("i")) {
-      InventarioHordaparte1();
+      historiaAliança01();
       vazio = null;
     }
     System.out.println();
