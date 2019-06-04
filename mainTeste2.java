@@ -3081,6 +3081,7 @@ public class mainTeste2 {
     if (vazio.equals("i")) {
       InventarioAliançaparte1();
       vazio = null;
+    }
 
     System.out.println("HP - " + HP);
     System.out.println("Mas antes mesmo que receber o golpe de misericórdia você consegue defender ao o ataque do Humano.");
