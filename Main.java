@@ -3,7 +3,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.net.URL;
 
-public class Main {
+public class mainTeste2 {
 
   public static String[] corpoPersonagem = new String[8];
   public static String nomeHeroi;
